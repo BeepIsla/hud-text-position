@@ -1,0 +1,58 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family: "Trebuchet MS";
+	font-size: 18px;
+	font-weight: 900;
+}
+
+#text {
+	resize: none;
+}
+
+#position {
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+}
+
+#color {
+	height: 80px;
+	position: relative;
+	bottom: 5px;
+}
+
+.controls {
+	background-color: #F0F0F0;
+	border-bottom: #000000 solid 1px;
+	height: 15%;
+}
+
+.movement-boundary {
+	width: 100%;
+	height: 100%;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.move-box {
+	display: initial;
+	outline: #000000 dotted 1px;
+	white-space: pre;
+	user-select: none;
+	font-size: 28px; /* Says "18" in game files */
+	cursor: grab;
+}
+
+.move-box:active {
+	cursor: grabbing;
+}
+
+.move-box-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
